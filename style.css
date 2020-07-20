@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* 
+Theme Name: Nearco
+Author: Showhey
+Author URI: https://showhey.jp
+Version: 0.1.0
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic", "Yu Gothic", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 2;
+  letter-spacing: .5px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+time {
+  color: #666;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* container */
+.header-inner, .container, .footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-inner, .container {
+  padding: 1.5rem 0;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+/* site title */
+.site-title {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.site-title a {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+/* list */
+.article-item {
+  padding: 1.25rem 0;
+  line-height: 1.5;
+  border-top: 1px solid #d7d7d7;
+}
+
+.article-item a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* content */
+.article h1 {
+  margin-bottom: 1rem;
+}
+
+.article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* footer */
+.footer-inner{
+  text-align: center;
+}
+
+.footer-nav li {
+  display: inline;
+  margin: 0 .5rem;
+}
+
+.footer-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
