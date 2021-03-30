@@ -5,6 +5,16 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 register_nav_menu( 'header-nav', ' ヘッダーナビゲーション ' );
 register_nav_menu( 'footer-nav', ' フッターナビゲーション ' );
+// headタグ内のWordPressのバージョン非表示
+remove_action( 'wp_head', 'wp_generator');
+// WordPress, プラグインなどすべてのバージョンを非表示
+function remove_version_info( $src ) {
+  if ( strpos( $src, 'ver=' ) )
+    $src = remove_query_arg( 'ver', $src );
+  return $src;
+}
+add_filter( 'style_loader_src', 'remove_version_info', 9999 );
+add_filter( 'script_loader_src', 'remove_version_info', 9999 );
 
 // prism.js & prism.css 読み込み
 function load_extra_files() {

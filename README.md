@@ -28,12 +28,16 @@ Copy to Clipboard Button(ソースコードをまとめてコピーできるボ�
 
 ### ショートコード
 以下のショートコードで簡単にシンタックスハイライトされたソースコードを記入することができます。  
-[prism lang="*ソースコードの言語*" file="*ファイル名*"]*ここにソースコードを記入*[/prism]  
+[prism lang='*ソースコードの言語*' file='*ファイル名*']*ここにソースコードを記入*[/prism]  
 langの未入力は、シンタックスハイライトと行番号の表示がオフになります。  
 fileの未入力は、ファイル名が「terminal」と表示されます。  
   
 例：  
-[prism lang="css" file="style.css"]h1{  
+[prism lang='html' file='index.html]&lt;h1&gt;HEADING1&lt;/h1&gt;  
+&lt;h2&gt;heading 2&lt;/h2&gt;  
+[/prism]  
+
+[prism lang='css' file='style.css']h1{  
 &nbsp;&nbsp;color: red;  
 }  
 [/prism]
